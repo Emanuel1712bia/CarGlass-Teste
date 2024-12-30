@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "GGSr9vMfG1SDEPJb/j5D5p5yejz/PdVmR7kY6GArXHo=",
+  "Source": "NprimoAPI",
+  "BasePath": "_content/NprimoAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
