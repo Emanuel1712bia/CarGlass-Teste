@@ -1,0 +1,14 @@
+
+
+//Acessar o diretorio pelo powershell dentro do container
+cd /data/NPRIMO/dotnet run
+
+*) Restaurar pacotes
+dotnet restore
+
+*) Compilar
+dotnet build
+
+*) Rodar
+dotnet run
+

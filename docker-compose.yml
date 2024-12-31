@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  prova:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: minha-imagem-nonroot:1.0
+    container_name: prova
+    volumes:
+      - "./Nprimo:/data"
+    ports:
+      - "8084:8080"
+      - "84:80"
+    stdin_open: true
+    tty: true

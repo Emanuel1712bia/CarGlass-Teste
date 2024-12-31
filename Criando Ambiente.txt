@@ -1,0 +1,91 @@
+// Coloque todos os arquivos em 
+  
+  "C:\Projetos\Nprimo"
+
+//Acesse o diretorio o 
+
+  cd C:\Projetos\Nprimo
+
+// Para interagir com o contêiner: [Execute no powershell em modo ADM]
+
+  docker-compose up --build
+
+// Para rodar novamente ou recriar se necessário [Execute no powershell em modo ADM]
+  docker run -it --name prova-novo \
+  -v "$(pwd)/Nprimo:/data" \
+  -p 8084:8080 \
+  -p 84:80 \
+  minha-imagem-root:1.0 \
+  /bin/bash
+
+
+Segue a sequência de execução dos consoles para o fluxo apresentado:
+
+Caso precise acessar o Linux no contaienr [Execute no powershell em modo ADM]
+  docker exec -it prova /bin/bash
+
+// --> Execução da API (NPrimoAPI)
+// --> Execução dos Testes Unitários (NPrimoAPI.Tests)
+// --> Execução do Programa Console (NPrimoAPI.Console)
+
+
+Como Rodar
+
+*) Execução da API (NPrimoAPI)
+
+  //Dentro do container acesse o diretório
+    
+    cd /data/NPRIMO
+
+  //Restaurar pacotes
+    
+    dotnet restore
+
+  //Compilar
+    
+    dotnet build
+
+  //Executar API (vai rodar na porta 8080 interna do container)
+    
+    dotnet run //Apontei para 8084
+    //ou
+    dotnet run --project NprimoAPI  //N Testei
+
+  //Para testar a API
+    
+    http://localhost:8084/Divisores/divisores?numero=45
+
+    http://localhost:8084/Divisores/divisoresprimos?numero=45
+
+*) Execução dos Testes Unitários (NPrimoAPI.Tests)
+
+  // Compilar em /data/NprimoAPI.Tests que representa  C:\Projetos\Nprimo\NprimoAPI.Tests 
+  
+    dotnet restore
+  
+    dotnet build
+
+  //Em um diretorio antes do projeto
+  // Em /data que representa C:\Projetos\Nprimo
+
+    dotnet test NprimoAPI.Tests
+
+
+*) Execução do Programa Console (NPrimoAPI.Console)
+
+   //Acessar o diretorio pelo powershell dentro do container
+     
+     cd /data/NPRIMO/dotnet run
+
+   // Restaurar pacotes
+
+     dotnet restore
+
+   // Compilar
+
+     dotnet build
+
+   // Rodar
+
+     dotnet run
+

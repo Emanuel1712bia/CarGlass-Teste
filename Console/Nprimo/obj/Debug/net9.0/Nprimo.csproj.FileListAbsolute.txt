@@ -1,0 +1,14 @@
+/data/Nprimo/bin/Debug/net9.0/Nprimo
+/data/Nprimo/bin/Debug/net9.0/Nprimo.deps.json
+/data/Nprimo/bin/Debug/net9.0/Nprimo.runtimeconfig.json
+/data/Nprimo/bin/Debug/net9.0/Nprimo.dll
+/data/Nprimo/bin/Debug/net9.0/Nprimo.pdb
+/data/Nprimo/obj/Debug/net9.0/Nprimo.GeneratedMSBuildEditorConfig.editorconfig
+/data/Nprimo/obj/Debug/net9.0/Nprimo.AssemblyInfoInputs.cache
+/data/Nprimo/obj/Debug/net9.0/Nprimo.AssemblyInfo.cs
+/data/Nprimo/obj/Debug/net9.0/Nprimo.csproj.CoreCompileInputs.cache
+/data/Nprimo/obj/Debug/net9.0/Nprimo.dll
+/data/Nprimo/obj/Debug/net9.0/refint/Nprimo.dll
+/data/Nprimo/obj/Debug/net9.0/Nprimo.pdb
+/data/Nprimo/obj/Debug/net9.0/Nprimo.genruntimeconfig.cache
+/data/Nprimo/obj/Debug/net9.0/ref/Nprimo.dll

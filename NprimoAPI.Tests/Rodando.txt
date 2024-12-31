@@ -1,0 +1,13 @@
+
+
+// Compilar em /data/NprimoAPI.Tests que representa  C:\Projetos\Nprimo\NprimoAPI.Tests 
+  
+  dotnet restore
+  
+  dotnet build
+
+
+//Em um diretorio antes do projeto
+// Em /data que representa C:\Projetos\Nprimo
+
+  dotnet test NprimoAPI.Tests

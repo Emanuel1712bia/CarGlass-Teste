@@ -1,0 +1,14 @@
+/data/NprimoAPI.Console/bin/Debug/net9.0/NprimoAPI.Console
+/data/NprimoAPI.Console/bin/Debug/net9.0/NprimoAPI.Console.deps.json
+/data/NprimoAPI.Console/bin/Debug/net9.0/NprimoAPI.Console.runtimeconfig.json
+/data/NprimoAPI.Console/bin/Debug/net9.0/NprimoAPI.Console.dll
+/data/NprimoAPI.Console/bin/Debug/net9.0/NprimoAPI.Console.pdb
+/data/NprimoAPI.Console/obj/Debug/net9.0/NprimoAPI.Console.GeneratedMSBuildEditorConfig.editorconfig
+/data/NprimoAPI.Console/obj/Debug/net9.0/NprimoAPI.Console.AssemblyInfoInputs.cache
+/data/NprimoAPI.Console/obj/Debug/net9.0/NprimoAPI.Console.AssemblyInfo.cs
+/data/NprimoAPI.Console/obj/Debug/net9.0/NprimoAPI.Console.csproj.CoreCompileInputs.cache
+/data/NprimoAPI.Console/obj/Debug/net9.0/NprimoAPI.Console.dll
+/data/NprimoAPI.Console/obj/Debug/net9.0/refint/NprimoAPI.Console.dll
+/data/NprimoAPI.Console/obj/Debug/net9.0/NprimoAPI.Console.pdb
+/data/NprimoAPI.Console/obj/Debug/net9.0/NprimoAPI.Console.genruntimeconfig.cache
+/data/NprimoAPI.Console/obj/Debug/net9.0/ref/NprimoAPI.Console.dll
