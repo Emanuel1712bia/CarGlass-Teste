@@ -1,0 +1,20 @@
+
+
+cd /data/NPRIMO
+
+# Restaurar pacotes
+dotnet restore
+
+# Compilar
+dotnet build
+
+# Executar API (vai rodar na porta 8080 interna do container)
+  dotnet run //Apontei para 8084
+  //ou
+  dotnet run --project NprimoAPI  //N Testei
+
+
+
+http://localhost:8084/Divisores/divisores?numero=45
+
+http://localhost:8084/Divisores/divisoresprimos?numero=45

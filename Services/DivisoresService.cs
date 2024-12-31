@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace NprimoAPI.Services
 {
     public class DivisoresService
@@ -22,7 +26,7 @@ namespace NprimoAPI.Services
                 }
             }
 
-            // Ajuste para 1
+            // Ajuste para 1 quando o número de entrada for 1
             if (numero == 1 && !divisores.Contains(-1))
             {
                 divisores.Add(-1);
@@ -48,6 +52,10 @@ namespace NprimoAPI.Services
         private bool EhPrimo(int numero)
         {
             int absNumero = Math.Abs(numero);
+
+            // Considerar 1 como primo para este desafio
+            if (absNumero == 1)
+                return true;
 
             if (absNumero < 2)
                 return false;
