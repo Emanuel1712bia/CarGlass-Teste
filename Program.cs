@@ -5,19 +5,16 @@ using NprimoAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configuração de serviços
 builder.Services.AddControllers();
 builder.Services.AddScoped<DivisoresService>();
 
-// Configuração da porta 8080
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(8080); // Define a porta 8080 para ouvir requisições
+    options.ListenAnyIP(8080);
 });
 
 var app = builder.Build();
 
-// Configuração do pipeline de middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
